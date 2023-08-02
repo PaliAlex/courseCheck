@@ -1,0 +1,8 @@
+{
+  "name": "courseCheck",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PaliAlex/courseCheck.git",
+  "author": "PaliAlex <oleksandr@y-tree.com>",
+  "license": "MIT"
+}
