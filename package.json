@@ -4,5 +4,34 @@
   "main": "index.js",
   "repository": "https://github.com/PaliAlex/courseCheck.git",
   "author": "PaliAlex <oleksandr@y-tree.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/plugin-transform-block-scoping": "^7.22.5",
+    "@babel/plugin-transform-classes": "^7.22.6",
+    "@babel/plugin-transform-template-literals": "^7.22.5",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.5",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6"
+  }
 }
