@@ -9,5 +9,6 @@ export const App: React.FC = () => {
     )
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// ReactDOM.render(<App />, document.getElementById("root"));
 
+ReactDOM.render(<h1>Woohoo!</h1>, document.getElementById('root'))

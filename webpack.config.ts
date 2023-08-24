@@ -1,15 +1,15 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const dirname = path.resolve(__dirname, '../apps/backofficeui');
+
 module.exports = {
     mode: 'development',
-    entry: '.src/index.ts',
-    devtool: 'inline-source-map',
+    entry: './src/index',
     output: {
         path: path.join(__dirname, '/dist'),
         filename: 'bundle.js'
     },
-    devtool: 'inline-source-map',
     devServer: {
         static: './dist',
     },
