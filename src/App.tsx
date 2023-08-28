@@ -1,11 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { Wrapper } from "./styles";
 
 export const App: React.FC = () => {
     return (
-        <div>
+        <Wrapper>
             <h1>Hello world</h1>
-        </div>
+        </Wrapper>
     )
 }
 
