@@ -18,9 +18,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "declaration": true,
-    "jsx": "react-jsx"
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "jsx": "react"
   },
   "include": [
-    "src"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "test/**/*.ts",
+    "test/**/*.tsx",
+    "webpack"
   ]
 }
