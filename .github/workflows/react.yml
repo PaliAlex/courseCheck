@@ -10,7 +10,6 @@ jobs:
 
     runs-on: ubuntu-latest
     name: 'Verify, Build & Test'
-    run-name: 'Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}'
 
     steps:
       - name: Get repository code
