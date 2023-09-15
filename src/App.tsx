@@ -5,7 +5,7 @@ import { Wrapper } from "./styles";
 export const App: React.FC = () => {
     return (
         <Wrapper>
-            <h1>Hello world</h1>
+            <h1>Hello worlddd</h1>
         </Wrapper>
     )
 }
