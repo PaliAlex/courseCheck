@@ -1,5 +1,14 @@
+//write the easiest test first
 describe('test', () => {
     it('should pass', () => {
-        expect(true).toBe(true);
+        //Given
+        const first = [
+            'first',
+            'second',
+            'third'
+        ];
+
+        //Then
+        expect(first).toBe(first);
     });
 });
