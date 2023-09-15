@@ -5,6 +5,7 @@
 
 # dependencies
 node_modules/
+dist/
 
 .jest-cache
 test-report.html
