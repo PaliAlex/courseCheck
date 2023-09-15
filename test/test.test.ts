@@ -11,4 +11,12 @@ describe('test', () => {
         //Then
         expect(first).toBe(first);
     });
+
+    it('should pass', () => {
+        //Given
+        const first = 0;
+
+        //Then
+        expect(Boolean(first)).toBe(false);
+    });
 });
