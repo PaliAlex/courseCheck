@@ -1,17 +1,19 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const dirname = path.resolve(__dirname, '../apps/backofficeui');
-
 module.exports = {
     mode: 'development',
-    entry: './src/index',
+    entry: {
+        main: ['./apps/index'],
+    },
     output: {
         path: path.join(__dirname, '/dist'),
         filename: 'bundle.js'
     },
     devServer: {
         static: './dist',
+        port: 8080,
+        hot: true,
     },
     module: {
         rules: [
@@ -37,7 +39,7 @@ module.exports = {
     plugins:[
         new HtmlWebpackPlugin({
             title: "My App",
-            template: './index.html'
+            template: './apps/index.html'
         })
     ]
 }
